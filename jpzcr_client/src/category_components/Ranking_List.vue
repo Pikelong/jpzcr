@@ -109,31 +109,6 @@
 <script>
     export default {
         name:"ranking_list",
-        data:function() {
-            return {
-                tableData: [{
-                    date: '1',
-                    name: '该死的温柔',
-                    address: '王嘉尔',
-                    time:"2:30"
-                }, {
-                    date: '2',
-                    name: '该死的温柔',
-                    address: '王嘉尔',
-                    time:"2:30"
-                }, {
-                    date: '3',
-                    name: '该死的温柔',
-                    address: '王嘉尔',
-                    time:"2:30"
-                }, {
-                    date: '4',
-                    name: '该死的温柔',
-                    address: '王嘉尔',
-                    time:"2:30"
-                }]
-            }
-    }
     }
 </script>
 

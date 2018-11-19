@@ -4,32 +4,32 @@
             <div class="language">
                 <p>来源</p>
                 <ul>
-                    <li><a href="javascript:;">电视剧</a></li>
-                    <li><a href="javascript:;">电影</a></li>
-                    <li><a href="javascript:;">动画片</a></li>
+                    <li><a href="javascript:void(0);">电视剧</a></li>
+                    <li><a href="javascript:void(0);">电影</a></li>
+                    <li><a href="javascript:void(0);">动画片</a></li>
                 </ul>
             </div>
             <div class="mood">
                 <p>心情</p>
                 <ul class="mood_tags">
 
-                    <li><a href="javascript:;">伤感</a></li>
+                    <li><a href="javascript:void(0);">伤感</a></li>
 
-                    <li><a href="javascript:;" >安静</a></li>
+                    <li><a href="javascript:void(0);" >安静</a></li>
 
-                    <li><a href="javascript:;" >快乐</a></li>
+                    <li><a href="javascript:void(0);" >快乐</a></li>
 
-                    <li><a href="javascript:;" >治愈</a></li>
+                    <li><a href="javascript:void(0);" >治愈</a></li>
 
-                    <li><a href="javascript:;" >励志</a></li>
+                    <li><a href="javascript:void(0);" >励志</a></li>
 
-                    <li><a href="javascript:;" >甜蜜</a></li>
+                    <li><a href="javascript:void(0);" >甜蜜</a></li>
 
-                    <li><a href="javascript:;" >寂寞</a></li>
+                    <li><a href="javascript:void(0);" >寂寞</a></li>
 
-                    <li><a href="javascript:;">宣泄</a></li>
+                    <li><a href="javascript:void(0);">宣泄</a></li>
 
-                    <li><a href="javascript:;">思念</a></li>
+                    <li><a href="javascript:void(0);">思念</a></li>
 
                 </ul>
             </div>
@@ -39,6 +39,7 @@
             <ul>
                 <li>
                     <div class="recommend">
+                        <marquee>《神雕侠侣》片尾曲--作者：南瓜阿南瓜</marquee>
                         <img src="../../static/images/login_bg.jpg" alt=""/>
                         <p>歌曲名称</p>
                         <p>播放量：999万</p>
@@ -47,6 +48,7 @@
                 </li>
                 <li>
                     <div class="recommend">
+                        <marquee>《天空之城》插曲</marquee>
                         <img src="../../static/images/login_bg.jpg" alt=""/>
                         <p>歌曲名称</p>
                         <p>播放量：999万</p>
@@ -54,6 +56,7 @@
                 </li>
                 <li>
                     <div class="recommend">
+                        <marquee>《幽灵公主》插曲--作者：南瓜阿南瓜</marquee>
                         <img src="../../static/images/login_bg.jpg" alt=""/>
                         <p>歌曲名称</p>
                         <p>播放量：999万</p>
@@ -61,6 +64,7 @@
                 </li>
                 <li>
                     <div class="recommend">
+                        <marquee>《龙猫》插曲--作者：南瓜阿南瓜</marquee>
                         <img src="../../static/images/login_bg.jpg" alt=""/>
                         <p>歌曲名称</p>
                         <p>播放量：999万</p>
@@ -68,6 +72,7 @@
                 </li>
                 <li>
                     <div class="recommend">
+                        <marquee>《哈尔的移动城堡》插曲--作者：南瓜阿南瓜</marquee>
                         <img src="../../static/images/login_bg.jpg" alt=""/>
                         <p>歌曲名称</p>
                         <p>播放量：999万</p>
@@ -75,6 +80,7 @@
                 </li>
                 <li>
                     <div class="recommend">
+                        <marquee>《夏日友人帐》插曲--作者：南瓜阿南瓜</marquee>
                         <img src="../../static/images/login_bg.jpg" alt=""/>
                         <p>歌曲名称</p>
                         <p>播放量：999万</p>
@@ -82,6 +88,7 @@
                 </li>
                 <li>
                     <div class="recommend">
+                        <marquee>《假如爱自有天意》插曲--作者：南瓜阿南瓜</marquee>
                         <img src="../../static/images/login_bg.jpg" alt=""/>
                         <p>歌曲名称</p>
                         <p>播放量：999万</p>
@@ -89,6 +96,7 @@
                 </li>
                 <li>
                     <div class="recommend">
+                        <marquee>《千与千寻》插曲--作者：南瓜阿南瓜</marquee>
                         <img src="../../static/images/login_bg.jpg" alt=""/>
                         <p>歌曲名称</p>
                         <p>播放量：999万</p>
@@ -96,6 +104,7 @@
                 </li>
                 <li>
                     <div class="recommend">
+                        <marquee>《种下星星的日子》插曲--作者：南瓜阿南瓜</marquee>
                         <img src="../../static/images/login_bg.jpg" alt=""/>
                         <p>歌曲名称</p>
                         <p>播放量：999万</p>
@@ -157,7 +166,7 @@ ul li a{
 }
 .all_song ul>li>.recommend{
     margin-top: 30px;
-    width: 290px;
+    width: 220px;
     height: 250px;
 }
 .recommend img,.new_song img{

@@ -10,7 +10,7 @@ import Index from './components/Index'
 export default {
   name: 'App',
   components: {
-    Index
+    "Index":Index
   }
 }
 </script>

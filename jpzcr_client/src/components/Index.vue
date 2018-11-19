@@ -1,30 +1,36 @@
 <template>
+
+
+
     <div class="index">
         <div class="content">
-            <header class="clearfix">
-                <div class="header">
+          <el-row>
+            <el-col :span="24">
+                <header class="clearfix">
+                  <div class="header">
                     <ul class="logo">
-                        <li><router-link to="/home"><img src="../../static/images/favicon.png" alt=""/></router-link></li>
+                      <li><router-link to="/home"><img src="../../static/images/favicon.png" alt=""/></router-link></li>
                     </ul>
                     <ul class="song_title">
-                        <li class="active"><router-link to="/home">音乐馆</router-link></li>
-                        <li><router-link to="/my_song">我的音乐</router-link></li>
-                        <li><router-link to="/client">客户端</router-link></li>
-                        <li><router-link to="/my_upload">我的上传</router-link></li>
+                      <li class="active"><router-link to="/home">音乐馆</router-link></li>
+                      <li><router-link to="/my_song">我的音乐</router-link></li>
+                      <li><router-link to="/client">客户端</router-link></li>
+                      <li><router-link to="/my_upload">我的上传</router-link></li>
                     </ul>
                     <ul class="login">
-                        <li>
-                            <div class="div_search">
-                                <input type="text" placeholder="关键词搜索"/>
-                                <button type="button"  @click="goToSearch"></button>
-                            </div>
+                      <li>
+                        <div class="div_search">
+                          <input type="text" placeholder="关键词搜索"/>
+                          <button type="button"  @click="goToSearch"></button>
+                        </div>
 
-                        </li>
-                        <li><router-link to="/login">登录</router-link></li>
+                      </li>
+                      <li><router-link to="/login">登录</router-link></li>
                     </ul>
-                </div>
-
-            </header>
+                  </div>
+                </header>
+            </el-col>
+          </el-row>
             <section>
                 <router-view></router-view>
             </section>
@@ -40,9 +46,9 @@
     export default {
         name:"Index",
         data : function(){
-            return {
-                msg:"sass",
-            }
+//            return {
+//                msg:"sass",
+//            }
         },
         methods: {
             goToSearch: function () {
@@ -59,23 +65,29 @@
         width: 100%;
         display: flex;
         flex: auto;
-
     }
     .content{
-        width: 1480px;
+        width: 1148px;
         margin: 0 auto;
         text-align: center;
 
     }
+  /*@media (max-width: 1080px ) {*/
+    /*.content{*/
+      /*width: 1024px;*/
+      /*margin: 0 auto;*/
+      /*text-align: center;*/
 
-  @media (max-width: 768px ) {
-    .content{
-      width: 768px;
-      margin: 0 auto;
-      text-align: center;
+    /*}*/
+  /*}*/
+  /*@media (max-width: 768px ) {*/
+    /*.content{*/
+      /*width: 768px;*/
+      /*margin: 0 auto;*/
+      /*text-align: center;*/
 
-    }
-  }
+    /*}*/
+  /*}*/
     .header{
         height: 60px;
         border-bottom: 1px solid #d6d6d6;

@@ -33,13 +33,15 @@
     </div>
 </template>
 <script>
-    export default {
+
+
+export default {
         name:"my_upload"
     }
 </script>
 
 <style scoped>
-
+  @import url("//unpkg.com/element-ui@2.4.10/lib/theme-chalk/index.css");
     #my_upload ul{
         margin-top: 50px;
         border: 1px solid #d6d6d6;
