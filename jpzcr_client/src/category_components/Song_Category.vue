@@ -120,7 +120,6 @@
                     :total="1000">
             </el-pagination>
         </div>
-
     </div>
 </template>
 <script>
@@ -148,10 +147,10 @@ p{
     float: left;
     width: 60%;
 }
-    ul li{
-        margin-top: 10px;
-        float: left;
-    }
+ ul li{
+    margin-top: 10px;
+    float: left;
+}
 ul li a{
     padding: 15px;
     color: #000000;

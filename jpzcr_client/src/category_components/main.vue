@@ -146,42 +146,6 @@
 </script>
 
 <style scoped>
-    /*.index{*/
-        /*justify-content: center;*/
-        /*width: 100%;*/
-        /*display: flex;*/
-        /*flex: auto;*/
-    /*}*/
-    /*.content{*/
-        /*width: 1480px;*/
-        /*margin: 0 auto;*/
-        /*text-align: center;*/
-    /*}*/
-    /*header{*/
-        /*width: 100%;*/
-        /*height: 100px;*/
-        /*background: #ffffff;*/
-        /*text-align: center;*/
-    /*}*/
-
-    /*.index{*/
-        /*justify-content: center;*/
-        /*width: 100%;*/
-        /*display: flex;*/
-        /*flex: auto;*/
-    /*}*/
-    /*.content{*/
-        /*width: 1480px;*/
-        /*margin: 0 auto;*/
-        /*text-align: center;*/
-    /*}*/
-    /*header{*/
-        /*width: 100%;*/
-        /*height: 100px;*/
-        /*background: #ffffff;*/
-        /*text-align: center;*/
-    /*}*/
-
     .category>ul li{
         float: left;
     }
@@ -197,9 +161,7 @@
     .category>ul li.active a{
         color: #006600;
     }
-    /*section ul li{*/
-        /*float: left;*/
-    /*}*/
+
     .div_recommend>ul>li,.div_new_song>ul>li,.div_songer>ul>li{
         float: left;
     }

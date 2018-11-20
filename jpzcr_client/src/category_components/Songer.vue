@@ -28,10 +28,11 @@
             <li>
                 <img src="../../static/images/login_bg.jpg" alt=""/>
                 <p>该死的温柔</p>
-            </li> <li>
-            <img src="../../static/images/login_bg.jpg" alt=""/>
-            <p>该死的温柔</p>
-        </li>
+            </li>
+            <li>
+                <img src="../../static/images/login_bg.jpg" alt=""/>
+                <p>该死的温柔</p>
+            </li>
             <li>
                 <img src="../../static/images/login_bg.jpg" alt=""/>
                 <p>该死的温柔</p>
@@ -40,11 +41,7 @@
                 <img src="../../static/images/login_bg.jpg" alt=""/>
                 <p>该死的温柔</p>
             </li>
-
         </ul>
-
-
-
     </div>
 </template>
 <script>
@@ -52,7 +49,6 @@
         name:"songer"
     }
 </script>
-
 <style scoped>
     #songer{
         display: flex;
@@ -74,5 +70,4 @@
     ul li{
         float: left;
     }
-
 </style>

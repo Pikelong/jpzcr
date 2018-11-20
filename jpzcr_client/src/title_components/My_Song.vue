@@ -1,14 +1,149 @@
 <template>
-    <div id="my_song">
-        我的音乐
-    </div>
+  <div id="my_song">
+    <table>
+      <thead>
+      <tr>
+        <th></th>
+        <th>歌曲</th>
+        <th>作词人</th>
+        <th>时长</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1</td>
+        <td>
+          <router-link to="/song_detail">
+            <img src="../../static/images/login_bg.jpg" alt=""/>
+            该死的温柔
+          </router-link>
+        </td>
+        <td>王嘉尔</td>
+        <td>2:30</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>
+          <img src="../../static/images/login_bg.jpg" alt=""/>
+          该死的温柔
+          <div class="mySong_even">
+            <a href="javascript:void(0)"><i class="list_menu__icon_play"></i></a>
+          </div>
+        </td>
+        <td>王嘉尔</td>
+        <td>2:30</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>
+          <img src="../../static/images/login_bg.jpg" alt=""/>
+          该死的温柔
+        </td>
+        <td>王嘉尔</td>
+        <td>2:30</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>
+          <img src="../../static/images/login_bg.jpg" alt=""/>
+          该死的温柔
+        </td>
+        <td>王嘉尔</td>
+        <td>2:30</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>
+          <img src="../../static/images/login_bg.jpg" alt=""/>
+          该死的温柔
+        </td>
+        <td>王嘉尔</td>
+        <td>2:30</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>
+          <img src="../../static/images/login_bg.jpg" alt=""/>
+          该死的温柔
+        </td>
+        <td>王嘉尔</td>
+        <td>2:30</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>
+          <img src="../../static/images/login_bg.jpg" alt=""/>
+          该死的温柔
+        </td>
+        <td>王嘉尔</td>
+        <td>2:30</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>
+          <img src="../../static/images/login_bg.jpg" alt=""/>
+          该死的温柔
+        </td>
+        <td>王嘉尔</td>
+        <td>2:30</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>
+          <img src="../../static/images/login_bg.jpg" alt=""/>
+          该死的温柔
+        </td>
+        <td>王嘉尔</td>
+        <td>2:30</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>
+          <img src="../../static/images/login_bg.jpg" alt=""/>
+          该死的温柔
+        </td>
+        <td>王嘉尔</td>
+        <td>2:30</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 <script>
-    export default {
-        name:"my_song"
-    }
+  export default {
+    name:"my_song",
+  }
 </script>
 
 <style scoped>
+  table{
+    margin-top: 20px;
+    width: 100%;
+  }
+  thead tr th{
+    width: 25%;
+    color: #666666;
+    font-size: 14px;
+  }
+  tbody tr td:not(:first-child){
+    padding-top: 20px;
+    width: 25%;
+    color: #000;
+    font-size: 14px;
+  }
+  tbody tr td:first-child{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #006600;
+    border-radius: 20px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    line-height: 40px;
+  }
+  tbody tr td img{
+    width: 80px;
+    height:80px;
+  }
 
 </style>

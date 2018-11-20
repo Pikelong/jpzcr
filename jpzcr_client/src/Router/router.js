@@ -14,6 +14,9 @@ import Song_Category from "../category_components/Song_Category"
 import Search from "../search/Search"
 import My_Upload from "../title_components/My_Upload"
 import Song_Detail from "../song_detail/Song_Detail"
+import Upload from "../title_components/Upload"
+import Register from "../title_components/Register"
+import Password_Forget from "../title_components/Password_Forget"
 Vue.use(VueRouter)
 
 const routes = [
@@ -43,6 +46,15 @@ const routes = [
     },
     {
       path:"/song_detail",component:Song_Detail
+    },
+    {
+        path:"/upload",component:Upload
+    },
+    {
+        path:"/register",component:Register
+    },
+    {
+        path:"/password_forget",component:Password_Forget
     }
 ]
 

@@ -14,6 +14,11 @@
                             <p>该死的温柔</p>
                             <p><span>王嘉尔</span></p>
                             <p>这是一首好听的歌曲</p>
+                            <p class="good_info">
+                              <img src="../../static/images/good.png" alt=""/>
+                              <img src="../../static/images/ungood.png" alt=""/>
+                              <img src="../../static/images/collection.png" alt=""/>
+                            </p>
                           </div>
                         </div>
                       </el-col>
@@ -44,7 +49,19 @@
         </el-col>
         <el-col :span="12">
           <div class="grid-content bg-purple songInfo-Detail-word">
-              <button type="button">为这首曲配上一篇好听的歌词</button>
+              <button type="button" @click="dialogFormVisible_make_somg = true">为这首曲配上一篇好听的歌词</button>
+            <el-dialog title="作词" :visible.sync="dialogFormVisible_make_somg" >
+              <el-form :model="form" >
+                <el-form-item label="作词内容" :label-width="formLabelWidth" class="dialog-body">
+                  <el-input type="textarea" v-model="form.desc"></el-input>
+                </el-form-item>
+
+              </el-form>
+              <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible_make_somg = false">取 消</el-button>
+                <el-button type="primary" @click="dialogFormVisible_make_somg = false">确 定</el-button>
+              </div>
+            </el-dialog>
             <table>
               <thead>
               <tr>
@@ -60,6 +77,10 @@
                  <p>该死的温柔</p>
                 </td>
                 <td>王嘉尔</td>
+                <td>
+                  <a class="good" href="javascript:void(0)"> <img src="../../static/images/good.png" alt=""/></a>
+                  <a class="ungood" href="javascript:void(0)">  <img src="../../static/images/ungood.png" alt=""/></a>
+                </td>
               </tr>
               <tr>
                 <td>2</td>
@@ -67,18 +88,32 @@
                   <p>该死的温柔</p>
                 </td>
                 <td>王嘉尔</td>
-              </tr> <tr>
+                <td>
+                  <a class="good" href="javascript:void(0)"> <img src="../../static/images/good.png" alt=""/></a>
+                  <a class="ungood" href="javascript:void(0)">  <img src="../../static/images/ungood.png" alt=""/></a>
+                </td>
+              </tr>
+              <tr>
                 <td>3</td>
                 <td>
                   <p>该死的温柔</p>
                 </td>
                 <td>王嘉尔</td>
-              </tr> <tr>
+                <td>
+                  <a class="good" href="javascript:void(0)"> <img src="../../static/images/good.png" alt=""/></a>
+                  <a class="ungood" href="javascript:void(0)">  <img src="../../static/images/ungood.png" alt=""/></a>
+                </td>
+              </tr>
+              <tr>
                 <td>4</td>
                 <td>
                   <p>该死的温柔</p>
                 </td>
                 <td>王嘉尔</td>
+                <td>
+                  <a class="good" href="javascript:void(0)"> <img src="../../static/images/good.png" alt=""/></a>
+                  <a class="ungood" href="javascript:void(0)">  <img src="../../static/images/ungood.png" alt=""/></a>
+                </td>
               </tr>
               </tbody>
             </table>
@@ -86,14 +121,26 @@
         </el-col>
         <el-col :span="24">
           <div class="grid-content bg-purple-dark comment-info">
-            <p>评论信息<span><a href="javascript:void(0)">添加评论</a></span></p>
+            <p>评论信息<span><a href="javascript:void(0)"  @click="dialogFormVisible = true">添加评论</a></span></p>
+            <el-dialog title="添加评论" :visible.sync="dialogFormVisible" >
+              <el-form :model="form" >
+                <el-form-item label="评论信息" :label-width="formLabelWidth" class="dialog-body">
+                  <el-input type="textarea" v-model="form.desc"></el-input>
+                </el-form-item>
+
+              </el-form>
+              <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+              </div>
+            </el-dialog>
             <ul>
               <li>
                 <div class="comment-info-content">
                   <img src="../../static/images/login_bg.jpg" alt=""/>
                   <div class="comment-info-content-name">
                     <p><span>王嘉尔</span><i>2018-11-19:20:08:15</i> </p>
-                    <span>点赞数量：215</span>
+                    <p><span>点赞数量：215</span><i><img src="../../static/images/good.png" alt=""/></i></p>
                   </div>
                   <p>百度翻译是百度发布的在线翻译服务，依托互联网数据资源和自然语言处理技术优势，致力于帮助用户跨越语言鸿沟，方便快捷地获取信息和服务。百度翻译支持全球28种热门语言互译，包括中文（简体）、英语、日语、韩语、西班牙语、泰语、法语、...</p>
                 </div>
@@ -103,7 +150,7 @@
                   <img src="../../static/images/login_bg.jpg" alt=""/>
                   <div class="comment-info-content-name">
                     <p><span>王嘉尔</span><i>2018-11-19:20:08:15</i> </p>
-                    <span>点赞数量：215</span>
+                    <p><span>点赞数量：215</span><i><img src="../../static/images/good.png" alt=""/></i></p>
                   </div>
                   <p>百度翻译是百度发布的在线翻译服务，依托互联网数据资源和自然语言处理技术优势，致力于帮助用户跨越语言鸿沟，方便快捷地获取信息和服务。百度翻译支持全球28种热门语言互译，包括中文（简体）、英语、日语、韩语、西班牙语、泰语、法语、...</p>
                 </div>
@@ -113,7 +160,7 @@
                   <img src="../../static/images/login_bg.jpg" alt=""/>
                   <div class="comment-info-content-name">
                     <p><span>王嘉尔</span><i>2018-11-19:20:08:15</i> </p>
-                    <span>点赞数量：215</span>
+                    <p><span>点赞数量：215</span><i><img src="../../static/images/good.png" alt=""/></i></p>
                   </div>
                   <p>百度翻译是百度发布的在线翻译服务，依托互联网数据资源和自然语言处理技术优势，致力于帮助用户跨越语言鸿沟，方便快捷地获取信息和服务。百度翻译支持全球28种热门语言互译，包括中文（简体）、英语、日语、韩语、西班牙语、泰语、法语、...</p>
                 </div>
@@ -123,7 +170,7 @@
                   <img src="../../static/images/login_bg.jpg" alt=""/>
                   <div class="comment-info-content-name">
                     <p><span>王嘉尔</span><i>2018-11-19:20:08:15</i> </p>
-                    <span>点赞数量：215</span>
+                    <p><span>点赞数量：215</span><i><img src="../../static/images/good.png" alt=""/></i></p>
                   </div>
                   <p>百度翻译是百度发布的在线翻译服务，依托互联网数据资源和自然语言处理技术优势，致力于帮助用户跨越语言鸿沟，方便快捷地获取信息和服务。百度翻译支持全球28种热门语言互译，包括中文（简体）、英语、日语、韩语、西班牙语、泰语、法语、...</p>
                 </div>
@@ -133,7 +180,7 @@
                   <img src="../../static/images/login_bg.jpg" alt=""/>
                   <div class="comment-info-content-name">
                     <p><span>王嘉尔</span><i>2018-11-19:20:08:15</i> </p>
-                    <span>点赞数量：215</span>
+                    <p><span>点赞数量：215</span><i><img src="../../static/images/good.png" alt=""/></i></p>
                   </div>
                   <p>百度翻译是百度发布的在线翻译服务，依托互联网数据资源和自然语言处理技术优势，致力于帮助用户跨越语言鸿沟，方便快捷地获取信息和服务。百度翻译支持全球28种热门语言互译，包括中文（简体）、英语、日语、韩语、西班牙语、泰语、法语、...</p>
                 </div>
@@ -149,7 +196,27 @@
 </template>
 <script>
     export default {
-        name:"song_detail"
+        name:"song_detail",
+        data:function() {
+          return {
+            dialogFormVisible: false,
+            dialogFormVisible_make_somg: false,
+            formLabelWidth: '120px',
+            form: {
+              name: '',
+              region: '',
+              date1: '',
+              date2: '',
+              delivery: false,
+              type: [],
+              resource: '',
+              desc: ''
+            },
+          };
+      },
+        methods: {
+
+      }
     }
 </script>
 
@@ -243,7 +310,7 @@
   }
   .comment-info-content img{
     float: left;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 10px;
   }
   .comment-info-content-name>p>i{
@@ -252,8 +319,9 @@
   .comment-info-content-name p{
     padding-bottom: 5px;
   }
- .comment-info-content-name{
-   /*float: left;*/
+ .comment-info-content-name img{
+   width: 16px;
+   height: 16px;
  }
  .comment-info-content>p{
    clear: both;
@@ -261,5 +329,29 @@
   .comment-info>p>span>a{
     font-size: 16px;
     color: #006600;
+  }
+  #song_detail > div > div:nth-child(2) > div > div > div > div.el-dialog__body > form > div > div > div > textarea{
+    height: 300px;
+    min-height: 300px;
+  }
+  .dialog-footer{
+    height: 50px;
+  }
+  .dialog-footer button{
+    margin-left: 20px;
+    width:70px;
+    height: 35px;
+  }
+  .good:hover img{
+    background-image: url("../../static/images/good_red.png");
+  }
+  .ungood:hover img{
+    background-image: url("../../static/images/ungood_red.png");
+  }
+  .good_info img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    margin-top: 5px;
   }
 </style>
