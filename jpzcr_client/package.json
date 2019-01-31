@@ -5,7 +5,7 @@
   "author": "xyj",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js  --host 192.168.1.31",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js  --host 192.168.1.28",
     "start": "npm run dev",
     "build": "node build/build.js"
   },

@@ -18,16 +18,15 @@ export default {
 <style>
 @import "../static/css/reset.css";
 #app {
-  font-family:'SimSun', 'ËÎÌå';
+  font-family:'SimSun', 'å®‹ä½“';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-
-  display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0px;
   padding: 0px;
+  background: #F6F6F6;
 }
 
 

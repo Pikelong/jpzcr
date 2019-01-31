@@ -1,36 +1,32 @@
 <template>
-
-
-
     <div class="index">
-        <div class="content">
-          <el-row>
-            <el-col :span="24">
-                <header class="clearfix">
-                  <div class="header">
-                    <ul class="logo">
-                      <li><router-link to="/home"><img src="../../static/images/favicon.png" alt=""/></router-link></li>
-                    </ul>
-                    <ul class="song_title">
-                      <li class="active"><router-link to="/home">音乐馆</router-link></li>
-                      <li><router-link to="/my_song">我的音乐</router-link></li>
-                      <li><router-link to="/client">客户端</router-link></li>
-                      <li><router-link to="/my_upload">我的上传</router-link></li>
-                    </ul>
-                    <ul class="login">
-                      <li>
-                        <div class="div_search">
-                          <input type="text" placeholder="关键词搜索"/>
-                          <button type="button"  @click="goToSearch"></button>
-                        </div>
+      <header class="clearfix">
+        <div class="header">
+          <div class="head_content">
+            <ul class="logo">
+              <li><router-link to="/home"><img src="../../static/images/favicon.png" alt=""/></router-link></li>
+            </ul>
+            <ul class="song_title">
+              <li class="active"><router-link to="/home">音乐馆</router-link></li>
+              <li><router-link to="/my_song">我的音乐</router-link></li>
+              <li><router-link to="/client">客户端</router-link></li>
+              <li><router-link to="/my_upload">我的上传</router-link></li>
+            </ul>
+            <ul class="login">
+              <li>
+                <div class="div_search">
+                  <input type="text" placeholder="关键词搜索"/>
+                  <button type="button"  @click="goToSearch"></button>
+                </div>
 
-                      </li>
-                      <li><router-link to="/login">登录</router-link></li>
-                    </ul>
-                  </div>
-                </header>
-            </el-col>
-          </el-row>
+              </li>
+              <li><router-link to="/login">登录</router-link></li>
+            </ul>
+          </div>
+
+        </div>
+      </header>
+        <div class="content">
             <section>
                 <router-view></router-view>
             </section>
@@ -45,10 +41,8 @@
 <script>
     export default {
         name:"Index",
-        data : function(){
-//            return {
-//                msg:"sass",
-//            }
+        data:{
+
         },
         methods: {
             goToSearch: function () {
@@ -59,15 +53,9 @@
 </script>
 
 <style scoped>
-  @import url("//unpkg.com/element-ui@2.4.9/lib/theme-chalk/index.css");
-  .index{
-        justify-content: center;
-        width: 100%;
-        display: flex;
-        flex: auto;
-    }
-    .content{
-        width: 1148px;
+  /*@import url("//unpkg.com/element-ui@2.4.9/lib/theme-chalk/index.css");*/
+    .content,.head_content{
+        width: 1200px;
         margin: 0 auto;
         text-align: center;
 
@@ -90,7 +78,7 @@
   /*}*/
     .header{
         height: 60px;
-        border-bottom: 1px solid #d6d6d6;
+        background: #FFFFFF;
     }
 
     .song_title{
@@ -102,10 +90,10 @@
     .login{
         float: right;
     }
-    .header>ul li{
+    .head_content>ul li{
         float: left;
     }
-    .header>ul li a{
+    .head_content>ul li a{
         line-height: 60px;
         font-size: 22px;
         color:#000;
@@ -113,7 +101,7 @@
         width: 120px;
         text-decoration: none;
     }
-    .header .song_title li a.active{
+    .head_content .song_title li a.active{
         background: #006600;
         color: #ffffff;
     }
@@ -155,4 +143,5 @@
     footer p{
         line-height: 300px;
     }
+
 </style>

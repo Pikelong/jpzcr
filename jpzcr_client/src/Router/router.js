@@ -21,14 +21,14 @@ Vue.use(VueRouter)
 
 const routes = [
     //第一层路由
-    {path: '/',  redirect: '/home/main'},
+    {path: '/',  redirect: '/home'},
     { path: '/login', component: Login },
     { path: '/home', component: Song_House ,
         children:[//子路由
             {path:'main',component:Main, },
             {path:'ranking_list',component:Ranking_List},
             {path:'songer',component:Songer},
-            {path:'song_category',component:Song_Category}
+            {path:'song_category',component:Song_Category},
         ],
         redirect: '/home/main'
     },
